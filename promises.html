@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        const resposta = fetch('http://https://api.postmon.com.br/v1/cep/14409120');
+
+        resposta.then(data => data.json())
+                .then(data => {console.log(data) })
+                .catch(erro => {console.log(erro)});
+                 
+        
+    </script>
+    
+</body>
+</html>
